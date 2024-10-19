@@ -1,5 +1,5 @@
 const start = (x) => {
-    window.location.href = "game.html";
+    window.location.href = "/questionario/game.html";
 }
 
 
