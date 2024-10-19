@@ -1,7 +1,7 @@
 /* Aqui é ajeitando o baclground da página de start */
 body{
     z-index: 1;
-     background-image: url(./Images/backgroundStartMaior.png) ;  
+     background-image: url('/Images/backgroundStartMaior.png') ;  
       background-repeat: no-repeat;  
       background-position-y: 0%;
       background-position-x:center ;
