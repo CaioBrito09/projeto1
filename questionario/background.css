@@ -11,7 +11,7 @@ body{
     z-index: 1;
      background-image: url(./Images/backgroundFase.jpg) ;  
       background-repeat: no-repeat;  
-      background-position-y: 13%;
+      background-position-y: 12%;
       background-position-x:center ;
      display: flex;
      background-size: 100%;
@@ -25,6 +25,7 @@ body{
     position: absolute;
     left:40%;
     top: 70%;
+    background-size: 100%;
 }
 
 /*.botao select{
@@ -36,6 +37,7 @@ body{
     /* background-color: rgb(0, 174, 227); */
     background-color: rgb(124, 3, 3);
     color: #000;
+    background-size: 100%;
 }
 
 /* Aqui é do background da tela de start */
@@ -62,6 +64,7 @@ body{
     left: 25%;
     top: 7%;
     border-radius: 10px;
+    background-size: 100%;
     }
     .question{
         z-index: 4;
@@ -73,6 +76,7 @@ body{
         font-weight: bolder;
         width: 40%;
         height: 25%;
+        background-size: 100%;
 
     }
     .answer1{
@@ -85,6 +89,7 @@ body{
         font-weight: bolder;
         width: 40%;
         height: 25%;
+        background-size: 100%;
       
     }
     .answer2{
@@ -95,6 +100,7 @@ body{
         top: 35%;
         opacity: 1;
         font-weight: bolder;
+        background-size: 100%;
     }
     .answer3{
         z-index: 4;
@@ -104,15 +110,17 @@ body{
         top: 45%;
         opacity: 1;
         font-weight: bolder;
+        background-size: 100%;
     }
     .answer4{
         z-index: 4;
         position: absolute;
-        font-size: 31px;
+        font-size: 30px;
         left: 27%;
         top: 55%;
         opacity: 1;
         font-weight: bolder;
+        background-size: 100%;
     }
 .Form1{
     position: absolute;
@@ -130,6 +138,7 @@ body{
     left: 35%;
     top: 20%;
     border-radius: 10px;
+    background-size: 100%;
 }
 .Dado1{
     position: absolute;
@@ -147,6 +156,7 @@ body{
     left: 53%;
     top: 20%;
     border-radius: 10px;
+    background-size: 100%;
 }
 .Form2{
     position: absolute;
@@ -183,6 +193,7 @@ body{
     left: 53%;
     top: 20%;
     border-radius: 10px;
+    background-size: 100%;
 }
 .Form3{
     position: absolute;
@@ -200,6 +211,7 @@ body{
     left: 35%;
     top: 20%;
     border-radius: 10px;
+    background-size: 100%;
 }
 .Dado3{
     position: absolute;
@@ -217,4 +229,5 @@ body{
     left: 53%;
     top: 20%;
     border-radius: 10px;
+    background-size: 100%;
 }
