@@ -9,7 +9,7 @@
 
 body{
     z-index: 1;
-     background-image: url(./Images/backgroundFase.jpg) ;  
+     background-image: url('/Images/backgroundFase.jpg') ;  
       background-repeat: no-repeat;  
       background-position-y: 13%;
       background-position-x:center ;
