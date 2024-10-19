@@ -1,0 +1,40 @@
+/* Aqui é ajeitando o baclground da página de start */
+body{
+    z-index: 1;
+     background-image: url(./Images/backgroundStartMaior.png) ;  
+      background-repeat: no-repeat;  
+      background-position-y: 0%;
+      background-position-x:center ;
+}
+
+
+/* Aqui é ajeitando o estilo do botão começar */
+.start button{
+    position: absolute;
+    color: black;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+  
+    background-color: #0d00ff;
+    border: none;
+    padding: 14px 32px 15px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  
+    border-radius: 20px;
+  
+    cursor: pointer;
+    height: 50px;
+
+    left:40%;
+    top: 80%;
+  }
+
+  /* Aqui é mudando a coloração ao passar o mouse por cima */
+ .start button:hover{
+    background-color: #0f04d8;
+}
