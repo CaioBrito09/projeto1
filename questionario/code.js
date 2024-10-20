@@ -30,7 +30,7 @@ const contagem = (x) => {
         contagem(x - 1)}, 1000);
     } 
     else {
-        window.location.href="minigame/comecaMini.html";
+        window.location.href="/minigame/comecaMini.html";
     }
       }
 const testa3 = (x) => {
