@@ -24,7 +24,7 @@ const mudaPagina =()=> {
 }
 
 
-document.addEventListener("keypress",function(press){
+document.addEventListener("keydown",function(press){
     const posiçãox = nave.offsetLeft;
     //const posiçãoy= nave.offsetTop
     if(press.key === "d"){  
@@ -35,6 +35,9 @@ document.addEventListener("keypress",function(press){
             nave.style.left = `${posiçãox -15}px`;
             console.log(posiçãox)            
         }
+    if(press.key==="Alt"){     
+        press.preventDefault();
+    }
 /*
    if(press.key==="w"){
         console.log(tamanhoPagina.clientWidth)
