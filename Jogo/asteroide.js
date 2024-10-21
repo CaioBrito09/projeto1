@@ -144,47 +144,65 @@ const criaAsteroidesExtras=()=>{
 criaAsteroidesExtras()
 
 const colisao=()=>{
-    setTimeout(colisao,10)
+    const width= tamanhoPagina.clientWidth
+    setTimeout(colisao,0)
     const xNave = nave.offsetLeft
     const yNave = nave.offsetTop
+    const wNave = nave.clientWidth
+    const hNave = nave.clientHeight
 
     const xA1 = asteroide.offsetLeft
     const yA1 = asteroide.offsetTop
+    const wA1 = asteroide.clientWidth
+    const hA1 = asteroide.clientHeight
 
     const xA2 = asteroide2.offsetLeft
     const yA2 = asteroide2.offsetTop
+    const wA2 = asteroide2.clientWidth
+    const hA2 = asteroide2.clientHeight
 
     const xA3 = asteroide3.offsetLeft
     const yA3 = asteroide3.offsetTop
+    const wA3 = asteroide3.clientWidth
+    const hA3 = asteroide3.clientHeight
 
     const xA4 = asteroide4.offsetLeft
     const yA4 = asteroide4.offsetTop
+    const wA4 = asteroide4.clientWidth
+    const hA4 = asteroide4.clientHeight
 
     const xA5 = asteroide5.offsetLeft
     const yA5 = asteroide5.offsetTop
+    const wA5 = asteroide5.clientWidth
+    const hA5 = asteroide5.clientHeight
 
     const xA6 = asteroide6.offsetLeft
     const yA6 = asteroide6.offsetTop
+    const wA6 = asteroide6.clientWidth
+    const hA6 = asteroide6.clientHeight
 
     const xA7 = asteroide7.offsetLeft
     const yA7 = asteroide7.offsetTop
+    const wA7 = asteroide7.clientWidth
+    const hA7 = asteroide7.clientHeight
 
     const xA8 = asteroide8.offsetLeft
     const yA8 = asteroide8.offsetTop
+    const wA8 = asteroide8.clientWidth
+    const hA8 = asteroide8.clientHeight
     //console.log(xA1)
-    if((xNave+40>=xA1 && xNave+40<=xA1+70) && (yNave+35>=yA1&& yNave+35<=yA1+84.4)||
-       (xNave+40>=xA2 && xNave+40<=xA2+70) && (yNave+35>=yA2&& yNave+35<=yA2+84.4)||
-       (xNave+40>=xA3 && xNave+40<=xA3+70) && (yNave+35>=yA3&& yNave+35<=yA3+84.4)||
-       (xNave+40>=xA4 && xNave+40<=xA4+70) && (yNave+35>=yA4&& yNave+35<=yA4+84.4)||
-       (xNave+40>=xA5 && xNave+40<=xA5+70) && (yNave+35>=yA5&& yNave+35<=yA5+84.4)||
-       (xNave+40>=xA6 && xNave+40<=xA6+70) && (yNave+35>=yA6&& yNave+35<=yA6+84.4)||
-       (xNave+40>=xA7 && xNave+40<=xA7+70) && (yNave+35>=yA7&& yNave+35<=yA7+84.4)||
-       (xNave+40>=xA8 && xNave+40<=xA8+70) && (yNave+35>=yA8&& yNave+35<=yA8+84.4)
+    if((xNave+(wNave/2)>=xA1 && xNave+(wNave/2)<=xA1+wA1) && (yNave>=yA1&& yNave<=yA1+hA1)||
+       (xNave+(wNave/2)>=xA2 && xNave+(wNave/2)<=xA2+wA2) && (yNave>=yA2&& yNave<=yA2+hA2)||
+       (xNave+(wNave/2)>=xA3 && xNave+(wNave/2)<=xA3+wA3) && (yNave>=yA3&& yNave<=yA3+hA3)||
+       (xNave+(wNave/2)>=xA4 && xNave+(wNave/2)<=xA4+wA4) && (yNave>=yA4&& yNave<=yA4+hA4)||
+       (xNave+(wNave/2)>=xA5 && xNave+(wNave/2)<=xA5+wA5) && (yNave>=yA5&& yNave<=yA5+hA5)||
+       (xNave+(wNave/2)>=xA6 && xNave+(wNave/2)<=xA6+wA6) && (yNave>=yA6&& yNave<=yA6+hA6)||
+       (xNave+(wNave/2)>=xA7 && xNave+(wNave/2)<=xA7+wA7) && (yNave>=yA7&& yNave<=yA7+hA7)||
+       (xNave+(wNave/2)>=xA8 && xNave+(wNave/2)<=xA8+wA8) && (yNave>=yA8&& yNave<=yA8+hA8)
     ){
         nave.style.opacity=0
         mudaPagina()
     }
-
     //limtando as bordas da página
     if(xNave<=0){
         nave.style.left = `0px`;
