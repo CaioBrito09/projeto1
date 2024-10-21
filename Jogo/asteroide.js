@@ -184,6 +184,14 @@ const colisao=()=>{
         nave.style.opacity=0
         mudaPagina()
     }
+
+    //limtando as bordas da página
+    if(xNave<=0){
+        nave.style.left = `0px`;
+    }
+    if(xNave+wNave>=width){
+        nave.style.left=`${width-(wNave)}px`
+    }
 }
 colisao()
 
