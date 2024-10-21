@@ -97,9 +97,11 @@ descer(asteroide7,19)
 const criaAsteroides1= ()=>{
     descer(asteroide,15,3)
     descer(asteroide2,10,3)
-    descer(asteroide5,24,3)
-    descer(asteroide6,28,3)
-    descer(asteroide7,19,3)
+    descer(asteroide3,24,3)
+    descer(asteroide4,28,3)
+    descer(asteroide5,19,3)
+    descer(asteroide6,10,5)
+    descer(asteroide7,5,3)
 }
 
 
@@ -109,38 +111,38 @@ const criaAsteroides2= ()=>{
     descer(asteroide3,7,3)
     descer(asteroide4,5,3)
     descer(asteroide5,24,3)
-    descer(asteroide6,15,3)
-    descer(asteroide7,19,3)
+    descer(asteroide6,15,3,130)
+    descer(asteroide7,19,3,150)
     descer(asteroide8,1,3)
-    
+    descer(asteroide9,6,3,90)
 }
 
 const criaAsteroides3= ()=>{
-    descer(asteroide,15,4)
-    descer(asteroide2,10,4)
-    descer(asteroide3,7,4)
-    descer(asteroide4,4,4)
-    descer(asteroide5,24,4)
-    descer(asteroide6,28,4)
-    descer(asteroide7,19,4)
-    descer(asteroide8,1,4)
-    descer(asteroide9,2,4)
-    descer(asteroide10,0,4)
+    descer(asteroide,15,4,200,200)
+    descer(asteroide2,10,4,300,200)
+    descer(asteroide3,7,9,90,200)
+    descer(asteroide4,4,4,150,200)
+    descer(asteroide5,24,4,90,200)
+    descer(asteroide6,28,4,120,200)
+    descer(asteroide7,19,4,90,200)
+    descer(asteroide8,6,6,100,200)
+    descer(asteroide9,9,7,110,200)
+    descer(asteroide10,10,5,90,200)
 }
 
 const criaAsteroidesExtras=()=>{
     const width = tamanhoPagina.clientWidth
-    if(width>=900 && width<=1200){
-        criaAsteroides2()
-    }
-    if(width<=700){
+    if(width>=1080 && width<=1440){
         criaAsteroides1()
     }
-    if(width>= 1500&& width<=2000){
+    if(width<=1080){
+        criaAsteroides1()
+    }
+    if(width>= 1440&& width<=1920){
         criaAsteroides2()
     }
-    else{
-        criaAsteroides1()
+    if(width>=1920){
+        criaAsteroides3()
     }
 }
 
