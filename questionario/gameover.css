@@ -1,0 +1,62 @@
+body{
+  z-index: 3;
+  background-color: black;
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url(./images/backgroundFase.jpg) ;  
+    background-repeat: no-repeat;  
+    background-position-y: 0%;
+    background-position-x:center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+
+}
+
+h1{
+  z-index: 3;
+ padding-top: 18%;
+  font-family: "Sixtyfour Convergence", sans-serif;
+}
+.border{
+  position: absolute;
+  align-self: center;
+  z-index: 1;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  
+  height: 34%;
+  width: 40%;
+  background-color: #740404;
+  border: 4px, bold;
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0.7;
+  left: 28%;
+  top: 30%;
+  border-radius: 10px;
+  background-size: 100%;
+  }
+ 
+  .reiniciar{
+    position: absolute;
+    z-index: 4;
+    background-color: #080404;
+    border: 3px solid black;
+    font-family: "Bungee Spice", sans-serif;
+    height: 8vh;
+    font-size: 3vw;
+    left: 39%;
+    top: 53%;
+}
