@@ -58,18 +58,21 @@ const aleatorio=(width)=>{
 
 //por o time entre 20 e 60
 
-const descer=(asteroide,time,acelera)=>{
+const descer=(asteroide,time,acelera,tamanho=70,tamanhoNave=80)=>{
+    const tAsteroide= asteroide.clientHeight
     asteroide.style.opacity=1
+    asteroide.style.height=`${tamanho}px`
     const altura = window.innerHeight +50
     const width= tamanhoPagina.clientWidth
+    nave.style.width=`${tamanhoNave}px`
     const intervalo =setInterval(aumenta,time)
     function aumenta(){
         const posiçãoy= asteroide.offsetTop
         if(posiçãoy>=altura){
             clearInterval(intervalo)
-            asteroide.style.top= `${-50}px`
+            asteroide.style.top= `${-tAsteroide-10}px`
             asteroide.style.left =`${aleatorio(width)}px`
-            descer(asteroide,time,acelera)
+            descer(asteroide,time,acelera,tamanho,tamanhoNave)
         }
         
         else{asteroide.style.top = `${posiçãoy +acelera}px`;}
