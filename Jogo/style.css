@@ -16,6 +16,21 @@ body{
       align-items: center;
 }
 
+#barra{
+    left:0%;
+    top:0%;
+    z-index: 5;
+    position:absolute;
+    height: 100%;
+    background-color: rgb(1, 1, 113);
+}
+
+#progresso{
+  width: 10px;
+  height: 100%;
+  background-color: gray;
+}
+
 h1{
    padding-top: 20%;
     font-family: "Sixtyfour Convergence", sans-serif;
@@ -99,4 +114,9 @@ img{
 #yA1{
     position: fixed;
 
+}
+
+#naveBarra{
+    width:35px;
+    left:0%;
 }
