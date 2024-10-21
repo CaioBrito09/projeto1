@@ -6,7 +6,7 @@ body{
     text-decoration: none;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-image: url(./Images/backgroundEstrelas.png) ;  
+    background-image: url('/Images/backgroundEstrelas.png') ;  
     background-size: 100%;
       background-repeat: no-repeat;  
       background-position-y: 0%;
