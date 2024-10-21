@@ -188,3 +188,21 @@ const colisao=()=>{
 colisao()
 
 // pegar o som de game over no Fl studio 21
+//Barra de progresso
+const barra=()=>{
+ const progress = document.getElementById("progresso")
+ const navezinha= document.getElementById("naveBarra")
+ const barraTotal = progress.clientHeight
+ const intervalo= setInterval(completa,70)
+ function completa(){
+    const atual = progress.clientHeight
+    if(atual<=0){
+        clearInterval(intervalo)
+    }
+    else{
+        progress.style.height=`${atual-(barraTotal/1000)}px`
+        navezinha.style.top=`${atual-(barraTotal/1000)}px`
+    }
+ }
+}
+barra()
