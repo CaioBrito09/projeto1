@@ -1,3 +1,4 @@
+
 const start = (x) => {
     window.location.href = "/questionario/game.html";
 }
@@ -9,7 +10,7 @@ const testa = (x) => {
         window.location.href="game2.html";
     }
     if(formulaEnviada!=="resp3") {
-        window.location.href="index.html";
+        window.location.href="gameover1.html";
     }
 
 }
@@ -20,7 +21,7 @@ const testa2 = (x) => {
         contagem(3)
     }
     if(formulaEnviada!=="resp4") {
-        window.location.href="index.html";
+        window.location.href="gameover1.html";
     } 
 }
 const contagem = (x) => {
@@ -40,7 +41,7 @@ const testa3 = (x) => {
         
     }
     if(formulaEnviada!=="resp1") {
-        window.location.href="index.html";
+        window.location.href="gameover1.html";
     }
 
 }
