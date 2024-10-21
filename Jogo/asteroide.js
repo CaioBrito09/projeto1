@@ -201,6 +201,7 @@ const barra=()=>{
  const progress = document.getElementById("progresso")
  const navezinha= document.getElementById("naveBarra")
  const barraTotal = progress.clientHeight
+ console.log(barraTotal)
  const intervalo= setInterval(completa,70)
  function completa(){
     const atual = progress.clientHeight
