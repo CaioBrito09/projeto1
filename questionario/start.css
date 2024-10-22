@@ -1,11 +1,14 @@
 /* Aqui é ajeitando o baclground da página de start */
 body{
     z-index: 1;
-     background-image: url('/Images/backgroundStartMaior.png') ;  
-     background-size: 100% ;
+     background-image: url(./Images/backgroundStartMaior.png) ;  
       background-repeat: no-repeat;  
       background-position-y: 0%;
       background-position-x:center ;
+      background-size: 100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      transform: scale();
 }
 
 
@@ -14,7 +17,7 @@ body{
     position: absolute;
     color: black;
     font-family: "Sixtyfour Convergence", sans-serif;
-    font-size: 30px;
+    font-size: 2vw;
     text-transform: uppercase;
   
     background-color: #0d00ff;
@@ -29,7 +32,8 @@ body{
     border-radius: 20px;
   
     cursor: pointer;
-    height: 50px;
+    height: 4vw;
+    width: 17vw;
 
     left:40%;
     top: 80%;
@@ -38,4 +42,14 @@ body{
   /* Aqui é mudando a coloração ao passar o mouse por cima */
  .start button:hover{
     background-color: #0f04d8;
+}
+.titulo{
+    z-index: 4;
+    font-size: 4vw;
+    padding-top: 4%;
+    background-size: 100%;
+    font-family: "Bungee Tint", sans-serif;
+    width: 80%;
+    padding-left: 22%;
+    
 }
