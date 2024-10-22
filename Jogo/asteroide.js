@@ -259,7 +259,7 @@ const colisao=()=>{
         gif.style.left = `${xNave}px`
         gif.style.top = `${yNave}px`
         gif.style.visibility= "visible"
-        setInterval(mudaPagina, 800)
+        setInterval(mudaPagina, 500)
     }
     //limtando as bordas da página
     if(xNave<=0){
