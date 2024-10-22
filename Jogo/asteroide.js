@@ -12,7 +12,7 @@ const asteroide11 = document.querySelector('.asteroide11')
 const asteroide12 = document.querySelector('.asteroide12')
 const asteroide13 = document.querySelector('.asteroide13')
 const asteroide14 = document.querySelector('.asteroide14')
-
+const gif = document.getElementById('.explosao')
 const nave = document.querySelector('.nave')
 
 const tamanhoPagina= document.querySelector('.body')
@@ -256,7 +256,10 @@ const colisao=()=>{
        (xNave+(wNave/2)>=xA10 && xNave+(wNave/2)<=xA10+wA10) && (yNave>=yA10&& yNave<=yA10+hA10)
     ){
         nave.style.opacity=0
-        mudaPagina()
+        gif.style.left = `${xNave}px`
+        gif.style.top = `${yNave}px`
+        gif.style.visibility= "visible"
+        setInterval(mudaPagina, 800)
     }
     //limtando as bordas da página
     if(xNave<=0){
