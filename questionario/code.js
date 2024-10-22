@@ -1,7 +1,7 @@
 const pasta= location.pathname
 console.log(pasta)
 document.addEventListener("keydown",function(press){
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena1.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena1'){
         window.location.href="/questionario/Cena2.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena2.html'){
