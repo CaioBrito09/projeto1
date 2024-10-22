@@ -76,3 +76,9 @@ const testa3 = (x) => {
 
 }
 
+function verificaGif(){
+    if(pasta==="/questionario/fase"){
+        contagem(6)
+    }
+}
+verificaGif()
