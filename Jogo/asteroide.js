@@ -18,53 +18,38 @@ const nave = document.querySelector('.nave')
 const tamanhoPagina= document.querySelector('.body')
 const gameOver= document.querySelector(".h1")
 
-
+//função que vai pra tela de GameOver
 const mudaPagina =()=> {
     window.location.href = "gameOver.html";
 }
 
-
+//funçao de movimento e bloquear a tecla Alt
 document.addEventListener("keydown",function(press){
     const posiçãox = nave.offsetLeft;
-    //const posiçãoy= nave.offsetTop
     if(press.key === "d"){  
         nave.style.left = `${posiçãox +15}px`;
-        console.log(posiçãox) 
         }
     if(press.key==="a"){
-            nave.style.left = `${posiçãox -15}px`;
-            console.log(posiçãox)            
+            nave.style.left = `${posiçãox -15}px`;       
         }
     if(press.key==="Alt"){     
         press.preventDefault();
     }
-/*
-   if(press.key==="w"){
-        console.log(tamanhoPagina.clientWidth)
-        nave.style.top = `${posiçãoy -6}px`;           
-    }
-    if(press.key==="s"){
-        console.log(tamanhoPagina.clientWidth)
-        nave.style.top = `${posiçãoy +6}px`;           
-    }
-*/
 }
 )
-//const width= tamanhoPagina.clientWidth
 
+//função para randomizar o x do asteroide
 const aleatorio=(width)=>{
    return  Math.random()*(width+6)-6
 }
 
-//por o time entre 20 e 60
-
-const descer=(asteroide,time,acelera,tamanho=70,tamanhoNave=80)=>{
+//função para fazer o asteroide descer
+const descer=(asteroide,time,acelera,tamanho=70)=>{
     const tAsteroide= asteroide.clientHeight
     asteroide.style.opacity=1
     asteroide.style.height=`${tamanho}px`
     const altura = window.innerHeight +50
     const width= tamanhoPagina.clientWidth
-    nave.style.width=`${tamanhoNave}px`
     const intervalo =setInterval(aumenta,time)
     function aumenta(){
         const posiçãoy= asteroide.offsetTop
@@ -72,28 +57,14 @@ const descer=(asteroide,time,acelera,tamanho=70,tamanhoNave=80)=>{
             clearInterval(intervalo)
             asteroide.style.top= `${-tAsteroide-10}px`
             asteroide.style.left =`${aleatorio(width)}px`
-            descer(asteroide,time,acelera,tamanho,tamanhoNave)
+            descer(asteroide,time,acelera,tamanho)
         }
         
         else{asteroide.style.top = `${posiçãoy +acelera}px`;}
     }
     
 }
-/*
-descer(asteroide,15)
-descer(asteroide2,10)
-descer(asteroide3,7)
-descer(asteroide4,4)
-descer(asteroide5,24)
-descer(asteroide6,28)
-descer(asteroide7,19)
-
-/*function desaparece(){
-    if(imagem.offsetTop==750){
-    imagem.style.top= `${-50}px`    
-    }
-}*/
-
+//primeiro tipo de resolução
 const criaAsteroides=()=>{
     descer(asteroide,15,3,90,50)
     descer(asteroide2,10,3,50,50)
@@ -102,7 +73,7 @@ const criaAsteroides=()=>{
     descer(asteroide5,20,3,70,50)
     descer(asteroide6,12,3,60,50)
 }
-
+//segundo tipo de resolução
 const criaAsteroides1=()=>{
     descer(asteroide,15,3,120,60)
     descer(asteroide2,10,3,70,60)
@@ -112,7 +83,7 @@ const criaAsteroides1=()=>{
     descer(asteroide6,20,3,90,60)
     descer(asteroide7,12,3,80,60)
 }
-
+//terceiro tipo de resolução
 const criaAsteroides2= ()=>{
     descer(asteroide,15,3,120)
     descer(asteroide2,10,3)
@@ -123,8 +94,7 @@ const criaAsteroides2= ()=>{
     descer(asteroide7,5,3,90)
     descer(asteroide8,6,4,80)
 }
-
-
+//quarto tipo de resolução
 const criaAsteroides3= ()=>{
     descer(asteroide,28,3,70,90)
     descer(asteroide2,10,3,120,90)
@@ -136,7 +106,7 @@ const criaAsteroides3= ()=>{
     descer(asteroide8,1,3,70,90)
     descer(asteroide9,6,3,90,90)
 }
-
+//quinto tipo de resolução
 const criaAsteroides4= ()=>{
     descer(asteroide,28,3,200,100)
     descer(asteroide2,10,3,120,100)
@@ -148,20 +118,20 @@ const criaAsteroides4= ()=>{
     descer(asteroide8,1,3,100,100)
     descer(asteroide9,6,3,90,100)
 }
-
+//sexto tipo de resolução
 const criaAsteroides5= ()=>{
-    descer(asteroide,15,4,200,120)
-    descer(asteroide2,10,4,300,120)
-    descer(asteroide3,7,6,90,120)
-    descer(asteroide4,4,4,150,120)
-    descer(asteroide5,24,4,90,120)
-    descer(asteroide6,28,4,120,120)
-    descer(asteroide7,19,4,90,120)
-    descer(asteroide8,6,5,100,120)
-    descer(asteroide9,9,5,110,120)
-    descer(asteroide10,10,5,90,120)
+    descer(asteroide,15,4,200)
+    descer(asteroide2,10,4,300)
+    descer(asteroide3,7,6,90)
+    descer(asteroide4,4,4,150)
+    descer(asteroide5,24,4,90)
+    descer(asteroide6,28,4,120)
+    descer(asteroide7,19,4,90)
+    descer(asteroide8,6,5,100)
+    descer(asteroide9,9,5,110)
+    descer(asteroide10,10,5,90)
 }
-
+//função que escolhe o nível a depender da resolução 
 const criaAsteroidesExtras=()=>{
     const width = tamanhoPagina.clientWidth
     if(width<=1200){
@@ -185,7 +155,7 @@ const criaAsteroidesExtras=()=>{
 }
 
 criaAsteroidesExtras()
-
+//funçaõ para as colisões
 const colisao=()=>{
     const width= tamanhoPagina.clientWidth
     setTimeout(colisao,0)
@@ -255,6 +225,7 @@ const colisao=()=>{
        (xNave+(wNave/2)>=xA9 && xNave+(wNave/2)<=xA9+wA9) && (yNave>=yA9&& yNave<=yA9+hA9)||
        (xNave+(wNave/2)>=xA10 && xNave+(wNave/2)<=xA10+wA10) && (yNave>=yA10&& yNave<=yA10+hA10)
     ){
+        //função para derrota
         nave.style.opacity=0
         gif.style.left = `${xNave}px`
         gif.style.top = `${yNave}px`
@@ -271,7 +242,7 @@ const colisao=()=>{
 }
 colisao()
 
-// pegar o som de game over no Fl studio 21
+
 //Barra de progresso
 const barra=()=>{
  const progress = document.getElementById("progresso")
@@ -291,7 +262,7 @@ const barra=()=>{
  }
 }
 barra()
-
+//limita mais ainda a página
 const limita=tamanhoPagina.clientWidth
 const limitay=tamanhoPagina.clientHeight
 tamanhoPagina.style.maxWidth=`${limita}px`
