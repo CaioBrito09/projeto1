@@ -95,7 +95,6 @@ descer(asteroide7,19)
 }*/
 
 const criaAsteroides=()=>{
-    alert("Oi")
     descer(asteroide,15,3,90,50)
     descer(asteroide2,10,3,50,50)
     descer(asteroide3,24,3,50,50)
@@ -105,7 +104,6 @@ const criaAsteroides=()=>{
 }
 
 const criaAsteroides1=()=>{
-    alert("0")
     descer(asteroide,15,3,120,60)
     descer(asteroide2,10,3,70,60)
     descer(asteroide3,24,3,70,60)
@@ -116,7 +114,6 @@ const criaAsteroides1=()=>{
 }
 
 const criaAsteroides2= ()=>{
-    alert("1")
     descer(asteroide,15,3,120)
     descer(asteroide2,10,3)
     descer(asteroide3,24,3)
@@ -129,7 +126,6 @@ const criaAsteroides2= ()=>{
 
 
 const criaAsteroides3= ()=>{
-    alert("2")
     descer(asteroide,28,3,70,90)
     descer(asteroide2,10,3,120,90)
     descer(asteroide3,7,3,70,90)
@@ -142,7 +138,6 @@ const criaAsteroides3= ()=>{
 }
 
 const criaAsteroides4= ()=>{
-    alert("3")
     descer(asteroide,28,3,200,100)
     descer(asteroide2,10,3,120,100)
     descer(asteroide3,7,3,110,100)
@@ -155,7 +150,6 @@ const criaAsteroides4= ()=>{
 }
 
 const criaAsteroides5= ()=>{
-    alert("4")
     descer(asteroide,15,4,200,120)
     descer(asteroide2,10,4,300,120)
     descer(asteroide3,7,9,90,120)
