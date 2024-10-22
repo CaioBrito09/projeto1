@@ -1,5 +1,6 @@
 const pasta= location.pathname
 console.log(pasta)
+//criando a função de passar as cutscenes
 document.addEventListener("keydown",function(press){
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena1'){
         window.location.href="/questionario/Cena2.html";
@@ -30,10 +31,11 @@ document.addEventListener("keydown",function(press){
     }
 }
 )
+//começa as cutscenes
 const start = (x) => {
     window.location.href = "/questionario/Cena1.html";
 }
-
+//verifica se as respostas esão certas
 const testa = (x) => {
     const formulaEnviada = document.getElementById("form").value
     if(formulaEnviada=="resp3"){
@@ -54,6 +56,7 @@ const testa2 = (x) => {
         window.location.href="gameover1.html";
     } 
 }
+//timer para passar de página
 const contagem = (x) => {
     console.log(x)
     if (x > 0) {
@@ -75,7 +78,7 @@ const testa3 = (x) => {
     }
 
 }
-
+//verifica se está na tela do gif para dar um timer e mudar para o jogo
 function verificaGif(){
     if(pasta==="/questionario/fase.html"){
         contagem(6)
