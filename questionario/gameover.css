@@ -23,6 +23,7 @@ h1{
   z-index: 3;
  padding-top: 18%;
   font-family: "Sixtyfour Convergence", sans-serif;
+  font-size:3.3vw;
 }
 .border{
   position: absolute;
@@ -47,6 +48,7 @@ h1{
   top: 30%;
   border-radius: 10px;
   background-size: 100%;
+  width:40vw;
   }
  
   .reiniciar{
@@ -59,4 +61,5 @@ h1{
     font-size: 3vw;
     left: 39%;
     top: 53%;
+    width:25vw;
 }
