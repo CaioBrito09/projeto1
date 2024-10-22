@@ -39,6 +39,12 @@ h1{
    font-size: 5vw;
     font-family: "Sixtyfour Convergence", sans-serif;
 }
+h2{
+    font-family: "Orbitron", sans-serif;
+    color: blue;
+    padding-top: 30%;
+    font-size: 2vw;
+}
 
 img{
     /* height: 70px; */
