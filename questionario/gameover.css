@@ -7,7 +7,7 @@ body{
   text-decoration: none;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url(./images/backgroundFase.jpg) ;  
+  background-image: url('/Images/backgroundFase.jpg') ;  
     background-repeat: no-repeat;  
     background-position-y: 0%;
     background-position-x:center ;
