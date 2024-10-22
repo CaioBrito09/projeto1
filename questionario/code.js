@@ -1,8 +1,35 @@
+const pasta= location.pathname
 
-const start = (x) => {
-    window.location.href = "/questionario/game.html";
+document.addEventListener("keydown",function(press){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena1.html'){
+        window.location.href="/questionario/Cena2.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena2.html'){
+        window.location.href="/questionario/Cena3.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena3.html'){
+        window.location.href="/questionario/Cena4.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena4.html'){
+        window.location.href="/questionario/Cena5.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena5.html'){
+        window.location.href="/questionario/Cena6.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena6.html'){
+        window.location.href="/questionario/Cena7.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena7.html'){
+        window.location.href="/questionario/Cena8.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena8.html'){
+        window.location.href="/questionario/Cena9.html"
+    }
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena9.html'){
+        window.location.href="/questionario/Cena2.html"
+    }
 }
-
+)
 
 const testa = (x) => {
     const formulaEnviada = document.getElementById("form").value
@@ -10,7 +37,7 @@ const testa = (x) => {
         window.location.href="game2.html";
     }
     if(formulaEnviada!=="resp3") {
-        window.location.href="/questionario/gameover1.html";
+        window.location.href="index.html";
     }
 
 }
@@ -21,7 +48,7 @@ const testa2 = (x) => {
         contagem(3)
     }
     if(formulaEnviada!=="resp4") {
-        window.location.href="/questionario/gameover1.html";
+        window.location.href="index.html";
     } 
 }
 const contagem = (x) => {
@@ -41,7 +68,8 @@ const testa3 = (x) => {
         
     }
     if(formulaEnviada!=="resp1") {
-        window.location.href="/questionario/gameover1.html";
+        window.location.href="index.html";
     }
 
 }
+
