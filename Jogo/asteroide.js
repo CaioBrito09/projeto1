@@ -22,7 +22,7 @@ const gameOver= document.querySelector(".h1")
 const mudaPagina =()=> {
     window.location.href = "gameOver.html";
 }
-
+//função para ir para a tela de vitória
 const vitoria =()=>{
     window.location.href="vitoria.html"
 }
