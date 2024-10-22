@@ -17,12 +17,15 @@
       font-family: "Silkscreen", sans-serif;
       font-weight: 400;
       font-style: normal;
+      font-size: 2.1vw;
   }
   .instrução {
     position: absolute;
-    left: 52%;
+    left: 47%;
     color: white;
     font-family: "Silkscreen", sans-serif;
     font-weight: 100;
     font-style: normal;
+    top:55%;
+    font-size: 1.15vw;
   }
