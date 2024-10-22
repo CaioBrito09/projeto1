@@ -26,10 +26,13 @@ document.addEventListener("keydown",function(press){
         window.location.href="/questionario/Cena9.html"
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena9.html'){
-        window.location.href="/questionario/Cena2.html"
+        window.location.href="/questionario/game.html"
     }
 }
 )
+const start = (x) => {
+    window.location.href = "/questionario/Cena1.html";
+}
 
 const testa = (x) => {
     const formulaEnviada = document.getElementById("form").value
