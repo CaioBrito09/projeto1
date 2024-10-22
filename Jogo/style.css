@@ -130,7 +130,7 @@ img{
 }
 
 #nave{
-    width:80px;
+    width:5vw;
     left:50%;
     top:90%;
 }
@@ -143,4 +143,11 @@ img{
 #naveBarra{
     width:2.2vw;
     left:0%;
+}
+.explosao{
+    position: absolute;
+    width:5vw;
+    left:50%;
+    top:90%;
+    visibility: hidden;
 }
