@@ -4,7 +4,7 @@
     overflow-x: hidden;
   } 
   body{
-      background-image: url(/Cenas/Lore.presidente.jpeg);
+      background-image: url('/Images/Lore.presidente.jpeg');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
