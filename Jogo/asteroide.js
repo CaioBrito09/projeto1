@@ -12,7 +12,7 @@ const asteroide11 = document.querySelector('.asteroide11')
 const asteroide12 = document.querySelector('.asteroide12')
 const asteroide13 = document.querySelector('.asteroide13')
 const asteroide14 = document.querySelector('.asteroide14')
-const gif = document.getElementById('.explosao')
+const gif = document.getElementById("explosao")
 const nave = document.querySelector('.nave')
 
 const tamanhoPagina= document.querySelector('.body')
