@@ -1,32 +1,32 @@
 const pasta= location.pathname
-
+console.log(pasta)
 document.addEventListener("keydown",function(press){
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena1.html'){
-        window.location.href="/questionario/Cena2.html"
+        window.location.href="/questionario/Cena2.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena2.html'){
-        window.location.href="/questionario/Cena3.html"
+        window.location.href="/questionario/Cena3.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena3.html'){
-        window.location.href="/questionario/Cena4.html"
+        window.location.href="/questionario/Cena4.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena4.html'){
-        window.location.href="/questionario/Cena5.html"
+        window.location.href="/questionario/Cena5.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena5.html'){
-        window.location.href="/questionario/Cena6.html"
+        window.location.href="/questionario/Cena6.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena6.html'){
-        window.location.href="/questionario/Cena7.html"
+        window.location.href="/questionario/Cena7.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena7.html'){
-        window.location.href="/questionario/Cena8.html"
+        window.location.href="/questionario/Cena8.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena8.html'){
-        window.location.href="/questionario/Cena9.html"
+        window.location.href="/questionario/Cena9.html";
     }
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena9.html'){
-        window.location.href="/questionario/game.html"
+        window.location.href="/questionario/game.html";
     }
 }
 )
