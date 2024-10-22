@@ -23,6 +23,10 @@ const mudaPagina =()=> {
     window.location.href = "gameOver.html";
 }
 
+const vitoria =()=>{
+    window.location.href="vitoria.html"
+}
+
 //funçao de movimento e bloquear a tecla Alt
 document.addEventListener("keydown",function(press){
     const posiçãox = nave.offsetLeft;
@@ -254,6 +258,7 @@ const barra=()=>{
     const atual = progress.clientHeight
     if(atual<=0){
         clearInterval(intervalo)
+        vitoria()
     }
     else{
         progress.style.height=`${atual-(barraTotal/1000)}px`
