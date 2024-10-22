@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+#opa{
+    background-color: #010d3b;
+    z-index: 0;
+    /* background-image: url('Images/gifMeu2.gif'); */
+  }
+  #lEsquerdo1{
+    position: absolute;
+    z-index:5;
+    left: 0%;
+    height: 100%;
+  }
+  #lEsquerdo2{
+    position:absolute;
+    z-index:6;
+    left: 13%;
+    height: 100%;
+  }
+  #lEsquerdo3{
+    position: absolute;
+    z-index:10;
+    left: 26%;
+    height: 100%;
+  }
+  #lEsquerdo4{
+    position:absolute;
+    z-index:9;
+    left:39%;
+    height: 100%;
+  }
+  #lEsquerdo5{
+    position: absolute;
+    z-index:8;
+    left: 52%;
+    height: 100%;
+  }
