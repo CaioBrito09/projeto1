@@ -4,7 +4,7 @@
     overflow-x: hidden;
   } 
   body{
-      background-image: url(/Cenas/Lore.moment.narrador.jpeg);
+      background-image: url('/Images/Lore.moment.narrador.jpeg');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
