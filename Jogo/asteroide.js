@@ -26,10 +26,10 @@ const mudaPagina =()=> {
 //funçao de movimento e bloquear a tecla Alt
 document.addEventListener("keydown",function(press){
     const posiçãox = nave.offsetLeft;
-    if(press.key === "d"){  
+    if(press.key === "d"||press.key==="ArrowRight"){  
         nave.style.left = `${posiçãox +15}px`;
         }
-    if(press.key==="a"){
+    if(press.key==="a"||press.key==="ArrowLeft"){
             nave.style.left = `${posiçãox -15}px`;       
         }
     if(press.key==="Alt"){     
