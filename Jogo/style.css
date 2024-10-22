@@ -169,3 +169,26 @@ img{
     top:90%;
     visibility: hidden;
 }
+
+
+#imgFinal{
+    top:7%;
+    height: 100%;
+}
+.voltar{
+    position: absolute;
+    top:0%;
+    left: 40%;
+    background-color: rgb(0, 0, 121);
+    height: 10vh;
+    font-size: 4vw;
+    font-family: "Bungee Spice", sans-serif;
+}
+.vitoria{
+    position: absolute;
+    top:20%;
+    padding-top: 0%;
+    font-size: 5vw;
+    color:blue;
+    font-family: "Audiowide", sans-serif;
+}
