@@ -94,55 +94,99 @@ descer(asteroide7,19)
     }
 }*/
 
-const criaAsteroides1= ()=>{
-    descer(asteroide,15,3)
-    descer(asteroide2,10,3)
-    descer(asteroide3,24,3)
-    descer(asteroide4,28,3)
-    descer(asteroide5,19,3)
-    descer(asteroide6,10,5)
-    descer(asteroide7,5,3)
+const criaAsteroides=()=>{
+    alert("Oi")
+    descer(asteroide,15,3,90,50)
+    descer(asteroide2,10,3,50,50)
+    descer(asteroide3,24,3,50,50)
+    descer(asteroide4,17,4,50,50)
+    descer(asteroide5,20,3,70,50)
+    descer(asteroide6,12,3,60,50)
 }
 
+const criaAsteroides1=()=>{
+    alert("0")
+    descer(asteroide,15,3,120,60)
+    descer(asteroide2,10,3,70,60)
+    descer(asteroide3,24,3,70,60)
+    descer(asteroide4,28,3,140,60)
+    descer(asteroide5,10,5,70,60)
+    descer(asteroide6,20,3,90,60)
+    descer(asteroide7,12,3,80,60)
+}
 
 const criaAsteroides2= ()=>{
-    descer(asteroide,28,3)
+    alert("1")
+    descer(asteroide,15,3,120)
     descer(asteroide2,10,3)
-    descer(asteroide3,7,3)
-    descer(asteroide4,5,3)
-    descer(asteroide5,24,3)
-    descer(asteroide6,15,3,130)
-    descer(asteroide7,19,3,150)
-    descer(asteroide8,1,3)
-    descer(asteroide9,6,3,90)
+    descer(asteroide3,24,3)
+    descer(asteroide4,28,3,170)
+    descer(asteroide5,19,3)
+    descer(asteroide6,10,5)
+    descer(asteroide7,5,3,90)
+    descer(asteroide8,6,4,80)
 }
 
+
 const criaAsteroides3= ()=>{
-    descer(asteroide,15,4,200,200)
-    descer(asteroide2,10,4,300,200)
-    descer(asteroide3,7,9,90,200)
-    descer(asteroide4,4,4,150,200)
-    descer(asteroide5,24,4,90,200)
-    descer(asteroide6,28,4,120,200)
-    descer(asteroide7,19,4,90,200)
-    descer(asteroide8,6,6,100,200)
-    descer(asteroide9,9,7,110,200)
-    descer(asteroide10,10,5,90,200)
+    alert("2")
+    descer(asteroide,28,3,70,90)
+    descer(asteroide2,10,3,120,90)
+    descer(asteroide3,7,3,70,90)
+    descer(asteroide4,5,3,70,90)
+    descer(asteroide5,24,4,70,90)
+    descer(asteroide6,15,3,130,90)
+    descer(asteroide7,19,3,150,90)
+    descer(asteroide8,1,3,70,90)
+    descer(asteroide9,6,3,90,90)
+}
+
+const criaAsteroides4= ()=>{
+    alert("3")
+    descer(asteroide,28,3,200,100)
+    descer(asteroide2,10,3,120,100)
+    descer(asteroide3,7,3,110,100)
+    descer(asteroide4,5,3,100,100)
+    descer(asteroide5,24,4,160,100)
+    descer(asteroide6,15,3,130,100)
+    descer(asteroide7,19,3,150,100)
+    descer(asteroide8,1,3,100,100)
+    descer(asteroide9,6,3,90,100)
+}
+
+const criaAsteroides5= ()=>{
+    alert("4")
+    descer(asteroide,15,4,200,120)
+    descer(asteroide2,10,4,300,120)
+    descer(asteroide3,7,9,90,120)
+    descer(asteroide4,4,4,150,120)
+    descer(asteroide5,24,4,90,120)
+    descer(asteroide6,28,4,120,120)
+    descer(asteroide7,19,4,90,120)
+    descer(asteroide8,6,6,100,120)
+    descer(asteroide9,9,7,110,120)
+    descer(asteroide10,10,5,90,120)
 }
 
 const criaAsteroidesExtras=()=>{
     const width = tamanhoPagina.clientWidth
-    if(width>=1080 && width<=1440){
+    if(width<=1200){
+        criaAsteroides()
+    }
+    if(width>=1200&&width<=1400){
         criaAsteroides1()
     }
-    if(width<=1080){
-        criaAsteroides1()
-    }
-    if(width>= 1440&& width<=1920){
+    if(width>=1400 && width<=1600){
         criaAsteroides2()
     }
-    if(width>=1920){
+    if(width>= 1600&& width<=1920){
         criaAsteroides3()
+    }
+    if(width>=1920&&width<=2200){
+        criaAsteroides4()
+    }
+    if(width>=2200){
+        criaAsteroides5()
     }
 }
 
@@ -195,6 +239,16 @@ const colisao=()=>{
     const yA8 = asteroide8.offsetTop
     const wA8 = asteroide8.clientWidth
     const hA8 = asteroide8.clientHeight
+
+    const xA9 = asteroide9.offsetLeft
+    const yA9 = asteroide9.offsetTop
+    const wA9 = asteroide9.clientWidth
+    const hA9 = asteroide9.clientHeight
+
+    const xA10 = asteroide10.offsetLeft
+    const yA10 = asteroide10.offsetTop
+    const wA10 = asteroide10.clientWidth
+    const hA10 = asteroide10.clientHeight
     //console.log(xA1)
     if((xNave+(wNave/2)>=xA1 && xNave+(wNave/2)<=xA1+wA1) && (yNave>=yA1&& yNave<=yA1+hA1)||
        (xNave+(wNave/2)>=xA2 && xNave+(wNave/2)<=xA2+wA2) && (yNave>=yA2&& yNave<=yA2+hA2)||
@@ -203,7 +257,9 @@ const colisao=()=>{
        (xNave+(wNave/2)>=xA5 && xNave+(wNave/2)<=xA5+wA5) && (yNave>=yA5&& yNave<=yA5+hA5)||
        (xNave+(wNave/2)>=xA6 && xNave+(wNave/2)<=xA6+wA6) && (yNave>=yA6&& yNave<=yA6+hA6)||
        (xNave+(wNave/2)>=xA7 && xNave+(wNave/2)<=xA7+wA7) && (yNave>=yA7&& yNave<=yA7+hA7)||
-       (xNave+(wNave/2)>=xA8 && xNave+(wNave/2)<=xA8+wA8) && (yNave>=yA8&& yNave<=yA8+hA8)
+       (xNave+(wNave/2)>=xA8 && xNave+(wNave/2)<=xA8+wA8) && (yNave>=yA8&& yNave<=yA8+hA8)||
+       (xNave+(wNave/2)>=xA9 && xNave+(wNave/2)<=xA9+wA9) && (yNave>=yA9&& yNave<=yA9+hA9)||
+       (xNave+(wNave/2)>=xA10 && xNave+(wNave/2)<=xA10+wA10) && (yNave>=yA10&& yNave<=yA10+hA10)
     ){
         nave.style.opacity=0
         mudaPagina()
