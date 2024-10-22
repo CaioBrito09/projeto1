@@ -45,6 +45,18 @@ h2{
     padding-top: 30%;
     font-size: 2vw;
 }
+h3{
+    font-family: "Orbitron", sans-serif;
+    color: blue;
+    padding-top: 0%;
+    font-size: 2vw;
+}
+h4{
+    font-family: "Orbitron", sans-serif;
+    color: blue;
+    padding-top: 0%;
+    font-size: 2vw;
+}
 
 img{
     /* height: 70px; */
