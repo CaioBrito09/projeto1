@@ -4,28 +4,28 @@ document.addEventListener("keydown",function(press){
     if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena1'){
         window.location.href="/questionario/Cena2.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena2.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena2'){
         window.location.href="/questionario/Cena3.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena3.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena3'){
         window.location.href="/questionario/Cena4.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena4.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena4'){
         window.location.href="/questionario/Cena5.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena5.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena5'){
         window.location.href="/questionario/Cena6.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena6.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena6'){
         window.location.href="/questionario/Cena7.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena7.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena7'){
         window.location.href="/questionario/Cena8.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena8.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena8'){
         window.location.href="/questionario/Cena9.html";
     }
-    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/Cena9.html'){
+    if((press.key===" "||press.key==="Spacebar")&&pasta==='/questionario/cena9'){
         window.location.href="/questionario/game.html";
     }
 }
